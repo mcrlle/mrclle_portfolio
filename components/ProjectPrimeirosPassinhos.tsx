@@ -1,5 +1,6 @@
+
 import React, { useEffect } from 'react';
-import { ArrowLeft, FileText, Smartphone } from 'lucide-react';
+import { ArrowLeft, FileText, Smartphone, Presentation } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/Button';
 import { ScrollReveal } from './ui/ScrollReveal';
@@ -94,6 +95,11 @@ const ProjectPrimeirosPassinhos: React.FC = () => {
                 </Button>
             </a>
             <a href="https://www.figma.com/deck/FxBuw6VJHSfyl8O6EOX91Q" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto">
+                <Button variant="outline" className="w-full md:min-w-[320px] gap-4">
+                    <Presentation className="w-3.5 h-3.5" /> Interactive Presentation
+                </Button>
+            </a>
+            <a href="https://www.figma.com/board/VpjXjeOr7QMIZuTt2Vs7kW/Primeiros-Passinhos-%7C-Artefatos?node-id=15-292&t=xLypV3v3EsxxyyHX-1" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto">
                 <Button variant="outline" className="w-full md:min-w-[320px] gap-4">
                     <FileText className="w-3.5 h-3.5" /> Documentation
                 </Button>

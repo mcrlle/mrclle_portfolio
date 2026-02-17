@@ -38,10 +38,9 @@ const ProjectArcaneHub: React.FC = () => {
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24 mb-32 border-t border-white/5 pt-20">
-          {/* Sidebar Info */}
           <div className="md:col-span-4 space-y-16">
             <div>
-              <h4 className="text-[9px] font-semibold text-white/20 uppercase tracking-[0.5em] mb-6">Expertise</h4>
+              <h4 className="text-[9px] font-semibold text-white/20 uppercase tracking-[0.5em] mb-6">Services</h4>
               <ul className="text-[11px] text-neutral-400 space-y-3 uppercase tracking-[0.3em] font-medium">
                 <li className="flex items-center gap-3"><span className="w-1 h-[1px] bg-white/20"></span> Product Design</li>
                 <li className="flex items-center gap-3"><span className="w-1 h-[1px] bg-white/20"></span> Information Architecture</li>
@@ -51,7 +50,7 @@ const ProjectArcaneHub: React.FC = () => {
             </div>
 
             <div>
-              <h4 className="text-[9px] font-semibold text-white/20 uppercase tracking-[0.5em] mb-6">Environment</h4>
+              <h4 className="text-[9px] font-semibold text-white/20 uppercase tracking-[0.5em] mb-6">Tech Stack</h4>
               <ul className="text-[11px] text-neutral-400 space-y-3 uppercase tracking-[0.3em] font-medium">
                 <li className="flex items-center gap-3"><span className="w-1 h-[1px] bg-white/20"></span> Figma & AI Integration</li>
               </ul>
@@ -72,12 +71,11 @@ const ProjectArcaneHub: React.FC = () => {
             </div>
           </div>
 
-          {/* Main Content */}
           <div className="md:col-span-8 space-y-24">
             <section className="space-y-10">
               <div className="flex items-center gap-6">
                 <span className="text-[10px] text-white/20 font-bold uppercase tracking-widest">01</span>
-                <h3 className="text-xs font-bold text-white uppercase tracking-[0.6em]">O Projeto</h3>
+                <h3 className="text-xs font-bold text-white uppercase tracking-[0.6em]">Visão Geral</h3>
                 <div className="flex-grow h-[1px] bg-white/5"></div>
               </div>
               <p className="text-neutral-400 leading-relaxed text-base md:text-lg font-light max-w-3xl">
@@ -88,11 +86,11 @@ const ProjectArcaneHub: React.FC = () => {
             <section className="space-y-10">
               <div className="flex items-center gap-6">
                 <span className="text-[10px] text-white/20 font-bold uppercase tracking-widest">02</span>
-                <h3 className="text-xs font-bold text-white uppercase tracking-[0.6em]">Estratégia Visual</h3>
+                <h3 className="text-xs font-bold text-white uppercase tracking-[0.6em]">O Desafio</h3>
                 <div className="flex-grow h-[1px] bg-white/5"></div>
               </div>
               <p className="text-neutral-400 leading-relaxed text-base md:text-lg font-light max-w-3xl">
-                Através de análises de comportamento, identifiquei que a agilidade na busca por informações é o fator crítico de sucesso em uma campanha. O design foi projetado com uma Arquitetura de Informação rigorosa, utilizando sistemas de etiquetas semânticas e uma interface otimizada para cenários de uso real. O resultado é um centro de comando que não apenas armazena, mas conecta eventos, garantindo que o ritmo da história nunca seja interrompido por burocracias de sistema.
+                Através de análises de comportamento em jogo, identifiquei que a agilidade na busca por informações é o fator crítico de sucesso em uma campanha. O design foi projetado com uma Arquitetura de Informação rigorosa, utilizando sistemas de etiquetas semânticas e uma interface otimizada para cenários de uso real (dark-mode nativo). O resultado é um centro de comando que não apenas armazena, mas conecta eventos, garantindo que o ritmo da história nunca seja interrompido por burocracias de sistema.
               </p>
             </section>
           </div>
