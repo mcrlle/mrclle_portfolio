@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-1000 ${isScrolled ? 'bg-[#050505]/90 backdrop-blur-xl py-3 border-b border-white/[0.01]' : 'bg-transparent py-8'}`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-4 group" onClick={() => window.scrollTo(0, 0)}>
+        <Link to="/" className="flex items-center gap-3 group" onClick={() => window.scrollTo(0, 0)}>
           <div className="flex flex-col items-start">
             <span className="text-[9px] font-display font-medium tracking-[0.4em] text-white/30 uppercase group-hover:text-white/70 transition-all duration-700">
               M.Campeche
