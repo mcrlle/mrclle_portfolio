@@ -1,9 +1,11 @@
+
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Trajectory from './components/Trajectory';
 import Lab from './components/Lab';
+import Journal from './components/Journal';
 import ProjectPrimeirosPassinhos from './components/ProjectPrimeirosPassinhos';
 import ProjectBotiPlus from './components/ProjectBotiPlus';
 import ProjectArcaneHub from './components/ProjectArcaneHub';
@@ -21,6 +23,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/trajetoria" element={<Trajectory />} />
             <Route path="/lab" element={<Lab />} />
+            <Route path="/journal" element={<Journal />} />
             <Route path="/projetos/primeiros-passinhos" element={<ProjectPrimeirosPassinhos />} />
             <Route path="/projetos/boti-plus" element={<ProjectBotiPlus />} />
             <Route path="/projetos/arcane-hub" element={<ProjectArcaneHub />} />

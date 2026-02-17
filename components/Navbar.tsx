@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -21,6 +22,7 @@ const Navbar: React.FC = () => {
     { name: 'About', href: '/trajetoria', isPage: true },
     { name: 'Works', href: 'projetos', isPage: false },
     { name: 'Lab', href: '/lab', isPage: true },
+    { name: 'Journal', href: '/journal', isPage: true },
     { name: 'Contact', href: 'contato', isPage: false },
   ];
 

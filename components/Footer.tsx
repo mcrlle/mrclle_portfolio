@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ScrollReveal } from './ui/ScrollReveal';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -55,6 +56,7 @@ const Footer: React.FC = () => {
               <button onClick={() => handleNavigation('/trajetoria', true)} className="text-[9px] text-neutral-500 hover:text-white uppercase tracking-[0.3em] text-left">About</button>
               <button onClick={() => handleNavigation('projetos', false)} className="text-[9px] text-neutral-500 hover:text-white uppercase tracking-[0.3em] text-left">Works</button>
               <button onClick={() => handleNavigation('/lab', true)} className="text-[9px] text-neutral-500 hover:text-white uppercase tracking-[0.3em] text-left">Lab</button>
+              <button onClick={() => handleNavigation('/journal', true)} className="text-[9px] text-neutral-500 hover:text-white uppercase tracking-[0.3em] text-left">Journal</button>
               <button onClick={() => handleNavigation('contato', false)} className="text-[9px] text-neutral-500 hover:text-white uppercase tracking-[0.3em] text-left">Contact</button>
             </div>
           </div>

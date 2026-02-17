@@ -1,6 +1,8 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { ScrollReveal } from './ui/ScrollReveal';
 import { useNavigate } from 'react-router-dom';
+import { Share2, Check } from 'lucide-react';
 
 const projects = [
   {
@@ -29,6 +31,32 @@ const projects = [
 
 const Projects: React.FC = () => {
   const navigate = useNavigate();
+  const [copiedId, setCopiedId] = useState<number | null>(null);
+
+  const handleShare = async (e: React.MouseEvent, project: typeof projects[0]) => {
+    e.stopPropagation();
+    const url = `${window.location.origin}${window.location.pathname}#/projetos/${project.slug}`;
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `Marcelle Campeche — ${project.title}`,
+          text: `Confira o case study de ${project.title} desenvolvido por Marcelle Campeche.`,
+          url: url,
+        });
+      } catch (err) {
+        console.error('Erro ao compartilhar:', err);
+      }
+    } else {
+      try {
+        await navigator.clipboard.writeText(url);
+        setCopiedId(project.id);
+        setTimeout(() => setCopiedId(null), 2000);
+      } catch (err) {
+        console.error('Erro ao copiar link:', err);
+      }
+    }
+  };
 
   return (
     <section id="projetos" className="section-padding container mx-auto px-6 border-t border-white/[0.02]">
@@ -73,10 +101,21 @@ const Projects: React.FC = () => {
                     {project.metadata}
                   </p>
                 </div>
-                <div className="mt-12">
+                <div className="mt-12 flex items-center gap-4">
                    <div className="inline-block border border-white/10 px-4 py-2 text-[10px] uppercase tracking-widest text-neutral-500 group-hover:border-white group-hover:text-white transition-all">
                       View Case Study
                    </div>
+                   <button 
+                     onClick={(e) => handleShare(e, project)}
+                     className="p-2 border border-white/10 text-neutral-500 hover:border-white hover:text-white transition-all duration-500 flex items-center justify-center group/share"
+                     title="Share Project"
+                   >
+                     {copiedId === project.id ? (
+                       <Check className="w-3.5 h-3.5" />
+                     ) : (
+                       <Share2 className="w-3.5 h-3.5 group-hover/share:scale-110 transition-transform" />
+                     )}
+                   </button>
                 </div>
               </div>
             </div>
