@@ -95,7 +95,7 @@ const ProjectPrimeirosPassinhos: React.FC = () => {
             </a>
             <a href="https://www.figma.com/deck/FxBuw6VJHSfyl8O6EOX91Q" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto">
                 <Button variant="outline" className="w-full md:min-w-[320px] gap-4">
-                    <FileText className="w-3.5 h-3.5" /> Documentation Deck
+                    <FileText className="w-3.5 h-3.5" /> Documentation
                 </Button>
             </a>
         </section>
